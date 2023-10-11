@@ -18,17 +18,7 @@ get("/giraffe") do
 end
 
 get("/") do
-  "<h1> Dice Roll </h1> 
-    <body> 
-      <ul> 
-        <li> <a href=https://ideal-chainsaw-p449xgjx6qv36wx-4567.app.github.dev/dice/2/6 target=_blank>Roll two six-sided die </a> 
-        <li> <a href=https://ideal-chainsaw-p449xgjx6qv36wx-4567.app.github.dev/dice/2/10 target=_blank>Roll two ten-sided die </a>
-        <li> <a href=https://ideal-chainsaw-p449xgjx6qv36wx-4567.app.github.dev/dice/1/20 target=_blank>Roll one twenty-sided die </a>  
-        <li> <a href=https://ideal-chainsaw-p449xgjx6qv36wx-4567.app.github.dev/dice/5/4 target=_blank>Roll five four-sided die </a> 
-      </ul>
-    </body>
-  "
-
+  erb(:elephant)
 end
 
 get("/dice/2/6") do
