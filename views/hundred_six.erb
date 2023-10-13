@@ -6,9 +6,8 @@
 
 <body>
 
-  <h1>5d4</h1>
+  <h1>100d6</h1>
 
-  <div>
   <ul>
   <% @rolls.each do |a_roll| %>
     <li>
@@ -16,8 +15,10 @@
     </li>
   <% end %>
   </ul>
+
+  <div>
+  <p><%= @outcome5 %></p>
   </div>
 
-  <p> <%= @outcome4 %> </p>
 </body>
 </html>

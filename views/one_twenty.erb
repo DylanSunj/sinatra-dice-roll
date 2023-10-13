@@ -6,6 +6,24 @@
 
 <body>
   <h1>1d20</h1>
-  <p><%= @outcome3 %> </p>
+
+  <div>
+  <ul>
+  <% @rolls.each do |a_roll| %>
+    <li>
+      <%= a_roll %>
+    </li>
+  <% end %>
+  </ul>
+  </div>
+
+  <% if @first_die == 1 %>
+    <p style="color: red"><%= @outcome3 %></p>
+  <% elsif @first_die == 20 %>
+    <p style="color: green"><%= @outcome3 %></p>
+  <% else %>
+    <p><%= @outcome3 %></p>
+  <% end %>
+
 </body> 
 </html>

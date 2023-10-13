@@ -5,7 +5,19 @@
 </head>
 
 <body>
+
   <h1>2d10</h1>
+
+  <div>
+  <ul>
+  <% @rolls.each do |a_roll| %>
+    <li>
+      <%= a_roll %>
+    </li>
+  <% end %>
+  </ul>
+  </div>
   <p><%= @outcome2 %></p>
+
 </body>
 </html>
